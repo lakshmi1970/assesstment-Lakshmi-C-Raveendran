@@ -3,39 +3,43 @@ preheader: ""
 ---
 
 <x-main>
-  <table class="mx-auto font-primary align-center-table">
+  <table class="w-full bg-gray-50">
     <tr>
-      <td class="w-[600px] sm:w-full bg-white align-center-table max-w-[600px]">
-        <table class="w-full">
+      <td>
+        <table class="mx-auto font-primary align-center-table">
           <tr>
-            <td>
-              <!-- Section 01 -->
-              <x-sections.section-01 />
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <!-- DELETE THIS COMMENT BEFORE BUILD - ALL FRAGMENTS SHOULD BE INSIDE STANDALONE TABLE - LIKE IN EXAMPLE: -->
+            <td class="w-[600px] sm:w-full bg-white align-center-table max-w-[600px] mx-auto">
               <table class="w-full">
                 <tr>
-                  <td>
-                    <x-fragments.fragment-01 />
-                    <x-fragments.fragment-02 />
-                    <x-fragments.fragment-03 />
+                  <td class="p-4">
+                    <!-- Section 01 -->
+                    <x-sections.section-01 />
+                  </td>
+                </tr>             
+                <tr>
+                  <td class="p-5 sm:p-0 pt-0">
+                    <!-- Section 02 -->
+                    <x-sections.section-02 />
                   </td>
                 </tr>
+                <tr>
+                        <td class="p-5 bg-primary py-10 sm:py-5">
+                          <!-- Section 03 -->
+                          <x-sections.section-03 />
+                        </td>
+                </tr>
+                <tr>
+                  <td class="p-5">
+                    <!-- Section 03 -->
+                    <x-sections.section-04 />
+                  </td>
+                </tr>
+                <!-- Add more <tr> as shown above to add more sections, or delete unused sections -->
               </table>
             </td>
           </tr>
-          <tr>
-            <td>
-              <!-- Section 02 -->
-              <x-sections.section-02 />
-            </td>
-          </tr>
-          <!-- Add more <tr> as shown above to add more sections, or delete unused sections -->
         </table>
       </td>
     </tr>
-  </table>
+  </table>  
 </x-main>
